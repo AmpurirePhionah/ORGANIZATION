@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Vocational School, Career Training, Skill Development, Education">
+        <meta name="description" content="Welcome to [Vocational School Name], where we provide hands-on training to shape your career.">
+        <meta name="author" content="[Your Name or Institution]">
+        <title>Welcome to Bugema Vocation Sch</title>
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <style>
+            /* General Styles */
+.about-hero {
+    background-color: #004080;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: #f3f6f9;
+    padding: 50px 20px;
+  }
+  
+  .about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    color: #004080;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+  }
+  
+  .team-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #004080;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Mission & Values Section */
+  .mission-values {
+    background-color: #f3f6f9;
+    padding: 50px 20px;
+  }
+  
+  .mission-values h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004080;
+  }
+  
+  .mission-values-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .mission, .values {
+    flex: 1 1 48%;
+  }
+  
+  .mission h3, .values h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .mission p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .values ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .values li {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background-color: #004080;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn-join-us {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .btn-join-us:hover {
+    background-color: #004080;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .team-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .mission-values-grid {
+      flex-direction: column;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  }
+  
+        </style>
+    </head>
+    <body>
+      <header>
+        <div class="container">
+          <!-- Logo and School Name -->
+          <div class="logo-container">
+            <img src="images/logo2.jpg" alt="School Logo" class="logo-img">
+            <span class="school-name">Bugema Vocation Sch</span>
+          </div>
+          
+          <!-- Navigation Menu -->
+          <nav>
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="Events.html">News/Events</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Apply Now Button -->
+            <a href="apply.html" class="btn-apply-now">Apply Now</a>
+      
+            <!-- Hamburger Menu for Mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+              <i class="fas fa-bars"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+    <section class="about-hero">
+        <div class="about-hero-content">
+          <h1>About Us</h1>
+          <p>Learn more about our mission, values, and the passionate team driving our vision forward.</p>
+        </div>
+      </section>
+      
+      <section class="about-section">
+        <div class="container">
+          <div class="about-text">
+            <h2>Who We Are</h2>
+            <p>We are an innovative institution dedicated to empowering students and professionals by providing world-class education and resources. Our mission is to create a lasting impact in the world by fostering creativity, collaboration, and personal growth.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="team-section">
+        <div class="container">
+          <h2>Meet Our Team</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <img src="images/bu2.jpg" alt="Team Member 1">
+              <h3>Jane Doe</h3>
+              <p>CEO & Founder</p>
+            </div>
+            <div class="team-member">
+              <img src="images/bu3.jpg" alt="Team Member 2">
+              <h3>John Smith</h3>
+              <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+              <img src="images/bu2.jpg" alt="Team Member 3">
+              <h3>Emily Johnson</h3>
+              <p>Creative Director</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="mission-values">
+        <div class="container">
+          <h2>Our Mission & Values</h2>
+          <div class="mission-values-grid">
+            <div class="mission">
+              <h3>Our Mission</h3>
+              <p>We aim to deliver high-quality education, foster innovation, and create a supportive environment that empowers individuals to succeed.</p>
+            </div>
+            <div class="values">
+              <h3>Our Values</h3>
+              <ul>
+                <li><strong>Integrity:</strong> We uphold the highest standards of honesty and ethics.</li>
+                <li><strong>Innovation:</strong> We embrace new ideas and technology to push the boundaries of learning.</li>
+                <li><strong>Collaboration:</strong> We believe in the power of teamwork to achieve greatness.</li>
+                <li><strong>Inclusivity:</strong> We welcome diversity and ensure everyone has an equal opportunity to succeed.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="cta-section">
+        <div class="container">
+          <h2>Join Us in Our Journey</h2>
+          <p>Become part of a community that is shaping the future. Let's work together to achieve greatness.</p>
+          <a href="contact.html" class="btn btn-join-us">Get in Touch</a>
+        </div>
+      </section>
+      
+    <script src="script/main.js"></script>
+    <footer class="footer-section">
+        <div class="footer-content">
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h4>About Us</h4>
+            <p>We are a leading institution committed to providing quality education. Our mission is to empower students with the knowledge and skills needed to succeed in today's world.</p>
+          </div>
+      
+          <!-- Quick Links Section -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="Events.html">News/Events</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Information Section -->
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@company.com</p>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Institution. All Rights Reserved.</p>
+          <p>Developed by AMPURIRE PHIONAH</p>
+
+        </div>
+      </footer>
+      
+</body>
+</html>

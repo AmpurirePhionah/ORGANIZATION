@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vocational School, Career Training, Skill Development, Education">
+    <meta name="description" content="Welcome to [Vocational School Name], where we provide hands-on training to shape your career.">
+    <meta name="author" content="[Your Name or Institution]">
+    <title>Welcome to [Vocational School Name]</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+    /* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Hero Section */
+.contact-hero {
+  background-image: url('images/voc4.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.contact-hero .hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.contact-hero .hero-content p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+/* Contact Form */
+.contact-form-container {
+  background-color: white;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .form-group input, 
+.contact-form .form-group textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-group input:focus, 
+.contact-form .form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Contact Details */
+.contact-details {
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-details .contact-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.contact-details .contact-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.contact-details .contact-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* FAQ Accordion */
+.accordion {
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+.accordion-item {
+  margin-bottom: 20px;
+}
+
+.accordion-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #0056b3;
+}
+
+.accordion-body {
+  padding: 15px;
+  background-color: #f1f1f1;
+  display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details .contact-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact-form-container {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <!-- Logo and School Name -->
+      <div class="logo-container">
+        <img src="images/logo2.jpg" alt="School Logo" class="logo-img">
+        <span class="school-name">Vocational School</span>
+      </div>
+      
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="Events.html">News/Events</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Apply Now Button -->
+        <a href="apply.html" class="btn-apply-now">Apply Now</a>
+  
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Unified Contact Page -->
+  <section class="contact-page">
+    <!-- Hero Section -->
+    <div class="contact-hero">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us for any inquiries or support.</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-container">
+      <h2>We're here to help</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Write your message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <div class="contact-item">
+        <h3>Our Office</h3>
+        <p>123 Main Street, City, Country</p>
+      </div>
+      <div class="contact-item">
+        <h3>Email Us</h3>
+        <p>support@yourwebsite.com</p>
+      </div>
+      <div class="contact-item">
+        <h3>Call Us</h3>
+        <p>+1 800 123 4567</p>
+      </div>
+    </div>
+
+    <!-- FAQ Accordion Section -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">How do I contact support?</button>
+          <div class="accordion-body">
+            <p>You can contact us by filling out the form above, or by reaching out to us via email or phone.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">What are your office hours?</button>
+          <div class="accordion-body">
+            <p>We are available Monday to Friday, from 9:00 AM to 5:00 PM (GMT).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<script>
+    // Toggle accordion
+    document.querySelectorAll('.accordion-header').forEach((button) => {
+      button.addEventListener('click', () => {
+        const body = button.nextElementSibling;
+        body.style.display = body.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+
+  
+    <script src="script/main.js"></script>
+
+    <footer class="footer-section">
+        <div class="footer-content">
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h4>About Us</h4>
+            <p>We are a leading institution committed to providing quality education. Our mission is to empower students with the knowledge and skills needed to succeed in today's world.</p>
+          </div>
+      
+          <!-- Quick Links Section -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="Events.html">News/Events</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Information Section -->
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@company.com</p>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Institution. All Rights Reserved.</p>
+          <p>Developed by AMPURIRE PHIONAH</p>
+
+        </div>
+      </footer>
+</body>
+</html>

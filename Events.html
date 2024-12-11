@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vocational School, Career Training, Skill Development, Education">
+    <meta name="description" content="Welcome to [Vocational School Name], where we provide hands-on training to shape your career.">
+    <meta name="author" content="[Your Name or Institution]">
+    <title>Welcome to Bugema Vocation SCH</title>
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+/* Hero Section */
+.news-events-hero {
+  position: relative;
+  background: url('images/voc2.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+.news-events-hero .hero-content {
+  position: relative;
+  z-index: 2;
+}
+.news-events-hero .hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.news-events-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.news-events-hero p {
+  font-size: 1.25rem;
+}
+
+/* Upcoming Events */
+.upcoming-events .events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.event-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.event-card:hover {
+  transform: translateY(-10px);
+}
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.event-card h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.event-card p {
+  font-size: 1rem;
+  margin: 10px;
+}
+.event-card .btn-more-details {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 10px;
+}
+.event-card .btn-more-details:hover {
+  background-color: #0056b3;
+}
+
+/* Latest News */
+.latest-news .news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.news-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.news-card:hover {
+  transform: translateY(-10px);
+}
+.news-card h3 {
+  font-size: 1.5rem;
+}
+.news-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.news-card .btn-read-more {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.news-card .btn-read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Subscription Section */
+.cta-subscribe {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  text-align: center;
+}
+.cta-subscribe form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.cta-subscribe input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.cta-subscribe .btn-subscribe {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cta-subscribe .btn-subscribe:hover {
+  background-color: #218838;
+}
+
+
+    </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <!-- Logo and School Name -->
+      <div class="logo-container">
+        <img src="images/logo2.jpg" alt="School Logo" class="logo-img">
+        <span class="school-name">Vocational School</span>
+      </div>
+      
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="Events.html">News/Events</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Apply Now Button -->
+        <a href="apply.html" class="btn-apply-now">Apply Now</a>
+  
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <section class="news-events-hero">
+    <div class="hero-content">
+      <h1>News and Events</h1>
+      <p>Stay up to date with the latest happenings at Bugema Vocational School! Explore our upcoming events, news, and announcements.</p>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+  
+  <section class="upcoming-events">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="events-grid">
+        <div class="event-card" data-aos="fade-up" data-aos-duration="1000">
+          <img src="images/voc6.jpg" alt="Annual Graduation Ceremony">
+          <h3>Annual Graduation Ceremony</h3>
+          <p><strong>Date:</strong> December 18, 2024</p>
+          <p><strong>Location:</strong> Bugema Vocational School Campus</p>
+        </div>
+        <div class="event-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <img src="images/voc5.jpg" alt="Open Day">
+          <h3>Open Day</h3>
+          <p><strong>Date:</strong> January 20, 2025</p>
+          <p><strong>Location:</strong> Bugema Vocational School</p>
+        </div>
+        <div class="event-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <img src="images/voc6.jpg" alt="Career Counseling Workshop">
+          <h3>Career Counseling Workshop</h3>
+          <p><strong>Date:</strong> February 5, 2025</p>
+          <p><strong>Location:</strong> Bugema Vocational School Campus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="latest-news">
+    <div class="container">
+      <h2>Latest News</h2>
+      <div class="news-grid">
+        <div class="news-card" data-aos="fade-up" data-aos-duration="1000">
+          <h3>New Programs at Bugema Vocational School</h3>
+          <p>We are excited to announce the addition of new vocational programs for the 2025 academic year. Check out the details and get ready to apply!</p>
+        </div>
+        <div class="news-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <h3>Bugema Vocational School Celebrates 10th Anniversary</h3>
+          <p>Join us as we celebrate 10 years of excellence in vocational education. We will be hosting a special event to mark this milestone.</p>
+        </div>
+        <div class="news-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          <h3>Important Update: Application Deadline Extended</h3>
+          <p>We have extended the application deadline for the upcoming academic year. Read on for more information on the new dates and application process.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="cta-subscribe">
+    <div class="container">
+      <h2>Stay Updated</h2>
+      <p>Subscribe to our newsletter to get the latest news and event updates directly to your inbox!</p>
+      <form action="#" method="post">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  
+  
+  
+    <script src="script/main.js"></script>
+
+    <footer class="footer-section">
+        <div class="footer-content">
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h4>About Us</h4>
+            <p>We are a leading institution committed to providing quality education. Our mission is to empower students with the knowledge and skills needed to succeed in today's world.</p>
+          </div>
+      
+          <!-- Quick Links Section -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="Events.html">News/Events</a></li>
+              <li><a href="admission.html">Admission</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Information Section -->
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@company.com</p>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Institution. All Rights Reserved.</p>
+          <p>Developed by AMPURIRE PHIONAH</p>
+
+        </div>
+      </footer>
+</body>
+</html>

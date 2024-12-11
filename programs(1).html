@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vocational School, Career Training, Skill Development, Education">
+    <meta name="description" content="Welcome to [Vocational School Name], where we provide hands-on training to shape your career.">
+    <meta name="author" content="[Your Name or Institution]">
+    <title>Welcome to [Vocational School Name]</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+.programs-hero {
+  background-color: #004080; /* Dark blue */
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.programs-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.programs-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Programs Overview */
+.programs-overview {
+  padding: 50px 20px;
+  background-color: #f3f6f9;
+}
+
+.programs-overview h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #004080;
+}
+
+.programs-overview p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.program-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-10px);
+}
+
+.program-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.program-card h3 {
+  font-size: 1.8rem;
+  color: #004080;
+  margin-bottom: 15px;
+}
+
+.program-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-learn-more {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+  background-color: #004080;
+}
+
+/* Program Details Section */
+.program-details {
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.program-details h2 {
+  font-size: 2.5rem;
+  color: #004080;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.benefits-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.benefit-card {
+  background-color: #f3f6f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 30%;
+}
+
+.benefit-card h3 {
+  font-size: 1.8rem;
+  color: #004080;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #004080;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-apply-now {
+  padding: 10px 20px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.btn-apply-now:hover {
+  background-color: #004080;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .programs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefits-grid {
+    flex-direction: column;
+  }
+
+  .program-card {
+    flex: 1 1 100%;
+  }
+
+  .program-details h2,
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <!-- Logo and School Name -->
+      <div class="logo-container">
+        <img src="images/logo2.jpg" alt="School Logo" class="logo-img">
+        <span class="school-name">Vocational School</span>
+      </div>
+      
+      <!-- Navigation Menu -->
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="Events.html">News/Events</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Apply Now Button -->
+        <a href="apply.html" class="btn-apply-now">Apply Now</a>
+  
+        <!-- Hamburger Menu for Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="programs-hero">
+    <div class="hero-content">
+      <h1>Vocational Programs at Bugema School</h1>
+      <p>Enhance your skills and shape your future with our practical, hands-on vocational programs. Explore our range of courses designed to equip you with the skills needed to thrive in the modern job market.</p>
+    </div>
+  </section>
+  
+  <section class="programs-overview">
+    <div class="container">
+      <h2>Our Vocational Programs</h2>
+      <p>At Bugema Vocational School, we offer a diverse selection of programs tailored to equip you with practical skills. Whether you're interested in technology, business, or other technical fields, we have a program for you.</p>
+      <div class="programs-grid">
+        <div class="program-card">
+          <img src="images/auto.jpg" alt="IT and Web Development">
+          <h3>IT & Web Development</h3>
+          <p>Learn the fundamentals of programming, web design, and software development to become a skilled IT professional.</p>
+          <a href="it-program.html" class="btn btn-learn-more">Learn More</a>
+        </div>
+        <div class="program-card">
+          <img src="images/voc3.jpg" alt="Business and Management">
+          <h3>Business and Management</h3>
+          <p>Gain valuable business skills in management, marketing, and finance to kickstart your career in the business world.</p>
+          <a href="business-program.html" class="btn btn-learn-more">Learn More</a>
+        </div>
+        <div class="program-card">
+          <img src="images/voc4.jpg" alt="Electrical Engineering">
+          <h3>Electrical Engineering</h3>
+          <p>Develop practical skills in electrical systems, installation, and maintenance. Become a certified electrician.</p>
+          <a href="images/voc5.jpg" class="btn btn-learn-more">Learn More</a>
+        </div>
+        <div class="program-card">
+          <img src="images/voc6.jpg" alt="Culinary Arts">
+          <h3>Culinary Arts</h3>
+          <p>Master the art of cooking and hospitality management, with hands-on training in food preparation and service.</p>
+          <a href="culinary-program.html" class="btn btn-learn-more">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="program-details">
+    <div class="container">
+      <h2>Why Choose Bugema Vocational School?</h2>
+      <p>At Bugema, we provide a unique learning experience that focuses on hands-on training, expert instructors, and industry partnerships that enhance your career prospects. Our goal is to prepare you for the workforce with real-world skills.</p>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <h3>Hands-On Learning</h3>
+          <p>Our programs focus on practical skills that give you real-world experience in your field of study.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Industry-Experienced Instructors</h3>
+          <p>Learn from instructors who have real-world experience and expertise in their respective fields.</p>
+        </div>
+        <div class="benefit-card">
+          <h3>Job Placement Support</h3>
+          <p>We provide support to help you find employment through our strong industry connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="cta-section">
+    <div class="container">
+      <h2>Get Started Today</h2>
+      <p>Take the first step towards your future career. Apply now and start your journey with Bugema Vocational School.</p>
+      <a href="apply.html" class="btn btn-apply-now">Apply Now</a>
+    </div>
+  </section>
+  
+    <script src="script/main.js"></script>
+    <footer class="footer-section">
+        <div class="footer-content">
+          <!-- About Us Section -->
+          <div class="footer-about">
+            <h4>About Us</h4>
+            <p>We are a leading institution committed to providing quality education. Our mission is to empower students with the knowledge and skills needed to succeed in today's world.</p>
+          </div>
+      
+          <!-- Quick Links Section -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#admissions">Admissions</a></li>
+              <li><a href="#programs">Programs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Information Section -->
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <p><strong>Address:</strong> 123 Main Street, kampala, uganda</p>
+            <p><strong>Phone:</strong> (256) 756-7890</p>
+            <p><strong>Email:</strong> contact@company.com</p>
+          </div>
+      
+          <!-- Social Media Section -->
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Copyright Section -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Institution. All Rights Reserved.</p>
+          <p>Developed by AMPURIRE PHIONAH</p>
+
+        </div>
+      </footer>
+</body>
+</html>

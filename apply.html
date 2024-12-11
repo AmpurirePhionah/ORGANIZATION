@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugema Vocational School Application</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<header>    
+
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="Events.html">News/Events</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </nav>
+</header>
+<body>
+    <h1>Bugema Vocational School Application</h1>
+    <form action="submit.php" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit phone number">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Program of Interest</legend>
+            <label for="program">Select a Program:</label>
+            <select id="program" name="program" required>
+                <option value="">Select a Program</option>
+                <option value="IT">IT & Web Development</option>
+                <option value="Electrical">Electrical Engineering</option>
+                <option value="Culinary">Culinary Arts</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume">
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
